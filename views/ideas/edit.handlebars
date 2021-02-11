@@ -1,0 +1,9 @@
+<h1>edit idea</h1>
+<form action="/ideas/edit/{{idea._id}}" method='post'>
+
+  <p>title:</p>
+  <input type="text" name="title" id="" placeholder='title' value={{idea.title}}>
+  <p>details</p>
+  <textarea name="details" id="" cols="30" rows="10" placeholder='details' required>{{idea.details}}</textarea>
+  <input type="submit" value="submit">
+</form>

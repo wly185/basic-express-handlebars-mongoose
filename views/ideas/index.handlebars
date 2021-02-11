@@ -1,0 +1,13 @@
+<a href="/ideas/add">add an idea</a>
+<h1>ideas</h1>
+
+{{#each ideas}}
+<div>
+  <p>title:{{title}}</p>
+  <p>details:{{details}}</p>
+  <a href="/ideas/edit/{{_id}}">edit</a>
+
+</div>
+{{else}}
+<p>no ideas</p>
+{{/each}}
